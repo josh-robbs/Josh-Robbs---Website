@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Josh Robbs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="app.js"></script>
+</head>
+<body>
+    <!-- trying to split this into a few section with divs -->
+    <!-- top of page -->
+    <div>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link projects" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link writing" href="writing.html">Writing</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link contact" href="contact.html">Contact</a>
+            </li>
+        </ul>
+        <h1 class="nav justify-content-center"><a class="nav-link home" href="index.html">josh robbs</a></h1>
+        <br>
+    </div>
+    <!-- end top -->
+    <!-- middle of page -->
+    <div class="projects-title">
+    <h1>Projects Page</h1>
+    <h2>Code Examples</h2>
+    </div>
+    <div class="container" style="border:1px solid">
+        <figure>
+            <figcaption>Project Euler ID #1</figcaption>
+            <pre>
+                <code>
+                    // If we list all the natural numbers below 10 that are multiples of 3 or 5, 
+                    // we get 3, 5, 6 and 9. The sum of these multiples is 23.
+
+                    // Find the sum of all the multiples of 3 or 5 below 1000.
+                    
+                    var divThreeFive = [];
+                    
+                    function multThreeFive() {
+                      for (var i=1; i<1000; i++) {
+                        if (i % 3 === 0 || i % 5 === 0) {
+                          divThreeFive.push(i);
+                        } 
+                      }
+                    }
+                    
+                    multThreeFive();
+                    
+                    var sum = divThreeFive.reduce(add, 0);
+                    
+                    function add(a, b) {
+                        return a + b;
+                    }
+                    
+                    console.log(sum);
+                </code>               
+            </pre>
+        </figure>
+    </div>
+    <br>    
+    <div class="container" style="border:1px solid">
+        <figure>
+            <figcaption>Loop Practice</figcaption>
+            <pre>
+                <code>
+                <!-- your code here -->
+                //    Using the following Array, create variable called numThrees with the value [13, 23, 33, 43, 53, 63, 73]
+
+                var numArray = [13, 15, 17, 23, 25, 27, 33, 35, 37, 43, 45, 47, 53, 55, 57, 63, 65, 67, 73, 75, 77];
+                var numThrees = [];
+                
+                function subsetnumArray() {
+                    for (var i=0; i < numArray.length; i++) {
+                        if (numArray[i] % 10 === 3) {
+                        numThrees.push(numArray[i]);
+                        }
+                    }
+                }
+
+                subsetnumArray();
+                console.log(numThrees);
+                </code>               
+            </pre>
+        </figure>
+    </div>
+    <br>
+    <div class="container" style="border:1px solid">
+        <figure>
+            <figcaption>Loop Practice</figcaption>
+            <pre>
+                <code>
+                <!-- your code here -->
+                //    Given the following Array, display in unique paragraphs'Even' if the number is even, 'Even and greater than 10' if the
+                //    number is even and greater than 10, and 'Odd' if the number is odd.
+                //    HINT: Google 'remainder operator'
+                
+                var numArray = [2, 17, 9, 24, 8];
+                
+                function dooBop() {
+                  for (var i = 0; i < numArray.length; i++) {
+                    if (numArray[i] % 2 === 0 && numArray[i] > 10) {
+                      console.log("Even and greater than 10");
+                    } else if (numArray[i] % 2 === 0 && numArray[i] < 10) {
+                      console.log("Even");
+                    } else {console.log("Odd");
+                    }
+                  }
+                }
+                
+                dooBop();
+                </code>               
+            </pre>
+        </figure>
+    </div>
+
+      <!-- end middle -->
+    <!-- bottom of page -->
+    <div>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link linkedin" href="https://www.linkedin.com/in/joshrobbs/" target="_blank">linkedIn</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link facebook" href="https://www.facebook.com/josh.robbs.1" target="_blank">facebook</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link twitter" href="https://twitter.com/psyker69" target="_blank">twitter</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link contact" href="https://www.instagram.com/psyker69/" target="_blank">instagram</a>
+                </li> 
+            </ul>
+        </div>
+    <!-- end bottom -->
+    </body>
+</html>

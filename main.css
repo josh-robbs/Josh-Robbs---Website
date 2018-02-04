@@ -1,0 +1,39 @@
+h1 {
+    font-size: 60px;
+    color:black
+}
+
+.jumbotron {
+    background-image: url(https://static.pexels.com/photos/128458/pexels-photo-128458.jpeg);
+    /* background-image: url(/img/pboard.jpg); */
+    background-position: center;
+    min-height: 700px;
+}
+
+.display-4 {
+    font-size: 50px;
+    color: white;
+    font-weight: 400;
+}
+
+.projects-title {
+    font-family: courier;
+    text-align: center;
+}
+
+.writing-title {
+    text-align: center;
+}
+
+.writing {
+    text-align: center;
+}
+
+.contacts-title {
+    text-align: center;
+}
+
+.centerv {
+    padding: 70px 0;
+    text-align: center;
+}
